@@ -2,7 +2,7 @@
 
 ¿No crees en la magia? Pues después de esta MasterClass lo harás xD
 
-En esta MasterClass vamos a hacer una Api REST básica con Django y Django RestFramework. La MasterClass se centrará en explotar las ventajas de los Frameworks opinados y con 'baterías cargadas', los cuales, por el momento, no existen en el ecosistema de JavaScript, el cual se centra más en seguir una filosofía de ligereza y de escalabilidad a medida que la aplicación lo va necesitando.
+En esta MasterClass vamos a hacer una Api REST básica con Django y Django RestFramework. La MasterClass se centrará en explotar las ventajas de los Frameworks opinados y con 'baterías cargadas', los cuales, por el momento, no tienen parangón en el ecosistema de JavaScript, el cual se centra más en seguir una filosofía de ligereza y de escalabilidad a medida que la aplicación lo va necesitando.
 
 
 # DRY y Django
