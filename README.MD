@@ -94,6 +94,8 @@ En Unix:
 
 python3 manage.py runserver
 
+[Más información sobre los virtualenvs](https://docs.python.org/3/tutorial/venv.html)
+
 
 # Más ayuda
 
