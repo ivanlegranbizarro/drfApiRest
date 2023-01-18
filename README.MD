@@ -28,7 +28,7 @@ Comando en Windows:
 
     \venv\Scripts\activate.bat
 
-  Comando en Unix:
+Comando en Unix:
 
     source ./venv/bin/activate
 
