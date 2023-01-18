@@ -80,3 +80,23 @@ Django necesita saber que hemos instalado Restframework y, también, que hemos g
 ## Manos a la obra
 
 Lo siguiente será hundir las manos en el fango y ponernos a trabajar ya en nuestra App. Para ello empezaremos a trabajar en el archivo models.py de la propia App y, a partir de ahí, en la MasterClass explicaremos como es, precisamente este archivo, el eje que vertebrará toda la lógica de nuestras aplicaciones con Django, pues es a partir de aquí es desde donde Django hará su magia para abstraer el CRUD y para deducir las validaciones que necesitamos extendiéndolas a los formularios (si hacemos frontend) o a los JSON (si hacemos una Api REST).
+
+
+## Arrancar un proyecto en Django
+
+Para arrancar nuestro proyecto y poder visualizarlo en un navegador, tendremos que ejecutar el comando:
+
+En Windows:
+
+python manage.py runserver
+
+En Unix:
+
+python3 manage.py runserver
+
+
+# Más ayuda
+
+Para encontrar más ayuda, para consultar cómo se instalan los requisitos de un proyecto forkeado, etc., os paso el enlace oficial a la documentación de Django.
+
+[Documentación oficial de Django](https://docs.djangoproject.com/en/4.1/intro/tutorial01/)
