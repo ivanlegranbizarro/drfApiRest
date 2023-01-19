@@ -1,3 +1,4 @@
+from django.views import generic
 from rest_framework import generics
 
 from .models import Articulo, Categoria
@@ -28,3 +29,9 @@ class ArticuloDetailAndCreateView(generics.RetrieveUpdateDestroyAPIView):
     queryset = Articulo.objects.all()
     model = Articulo
     serializer_class = ArticuloSerializer
+
+
+class ArticuloListView(generic.ListView):
+    model = Articulo
+    template_name = 'blog/articulo_list.html'
+    context_object_name = 'articulos'
