@@ -36,3 +36,10 @@ class ArticuloListView(generic.ListView):
     model = Articulo
     template_name = 'blog/articulo_list.html'
     context_object_name = 'articulos'
+
+
+
+# def articulo_list(request):
+#     articulos = Articulo.objects.all()
+#     return render(request, 'blog/articulo_list.html', {'articulos': articulos})
+
