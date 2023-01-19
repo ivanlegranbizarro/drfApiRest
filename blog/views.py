@@ -31,6 +31,7 @@ class ArticuloDetailAndCreateView(generics.RetrieveUpdateDestroyAPIView):
     serializer_class = ArticuloSerializer
 
 
+# FRONTEND
 class ArticuloListView(generic.ListView):
     model = Articulo
     template_name = 'blog/articulo_list.html'
