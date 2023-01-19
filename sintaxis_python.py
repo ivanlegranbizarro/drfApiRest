@@ -85,3 +85,12 @@ class Estudiante(Persona):
 nombre: str = 'Iván'
 edad: int = 37
 estatura: float = 1.75
+
+# Tipar funciones en Python (tanto los parámetros que se le pasan como la salida)
+
+
+def entrar_discoteca(edad: int) -> str:
+    if edad >= 18:
+        return 'Puedes entrar'
+    else:
+        return 'No puedes entrar'
