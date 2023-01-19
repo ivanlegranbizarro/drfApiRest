@@ -1,4 +1,5 @@
 from django.test import TestCase
+
 from .models import Articulo, Categoria
 
 # Create your tests here.
@@ -11,6 +12,3 @@ from .models import Articulo, Categoria
 #   def test_categoria_str(self):
 #     categoria = Categoria(nombre='A sample title')
 #     self.assertEqual(str(categoria), categoria.nombre)
-
-
-
