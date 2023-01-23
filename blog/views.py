@@ -43,3 +43,8 @@ class ArticuloListView(generic.ListView):
 #     articulos = Articulo.objects.all()
 #     return render(request, 'blog/articulo_list.html', {'articulos': articulos})
 
+
+class ArticuloDetailView(generic.DateDetailView):
+    model = Articulo
+    template_name = 'blog/articulo_detail.html'
+    context_object_name = 'articulo'
