@@ -48,3 +48,8 @@ class ArticuloDetailView(generic.DateDetailView):
     model = Articulo
     template_name = 'blog/articulo_detail.html'
     context_object_name = 'articulo'
+    lookup_field = 'slug'
+
+# def articulo_detail(request, slug):
+#     articulo = Articulo.objects.get(slug=slug)
+#     return render(request, 'blog/articulo_detail.html', {'articulo': articulo})
