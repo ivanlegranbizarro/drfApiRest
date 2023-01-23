@@ -7,6 +7,7 @@ from .serializers import ArticuloSerializer, CategoriaSerializer
 # Create your views here.
 
 
+# API BACKEND
 class CategoriaView(generics.ListCreateAPIView):
     queryset = Categoria.objects.all()
     model = Categoria
@@ -31,12 +32,11 @@ class ArticuloDetailAndCreateView(generics.RetrieveUpdateDestroyAPIView):
     serializer_class = ArticuloSerializer
 
 
-# FRONTEND
+# FRONTEND (NO HAGÁIS ESTO EN VUESTRAS CASAS. Nunca se mezclan en el mismo controlador las vistas de API y las vistas de frontend)
 class ArticuloListView(generic.ListView):
     model = Articulo
     template_name = 'blog/articulo_list.html'
     context_object_name = 'articulos'
-
 
 
 # def articulo_list(request):
@@ -44,7 +44,7 @@ class ArticuloListView(generic.ListView):
 #     return render(request, 'blog/articulo_list.html', {'articulos': articulos})
 
 
-class ArticuloDetailView(generic.DateDetailView):
+class ArticuloDetailView(generic.DetailView):
     model = Articulo
     template_name = 'blog/articulo_detail.html'
     context_object_name = 'articulo'
