@@ -1,5 +1,6 @@
 from django.views import generic
 from rest_framework import generics
+from drf_spectacular.utils import extend_schema
 
 from .models import Articulo, Categoria
 from .serializers import ArticuloSerializer, CategoriaSerializer
@@ -8,24 +9,28 @@ from .serializers import ArticuloSerializer, CategoriaSerializer
 
 
 # API BACKEND
+@extend_schema(tags=['categorías'])
 class CategoriaView(generics.ListCreateAPIView):
     queryset = Categoria.objects.all()
     model = Categoria
     serializer_class = CategoriaSerializer
 
 
+@extend_schema(tags=['categorías'])
 class CategoriaDetailAndCreateView(generics.RetrieveUpdateDestroyAPIView):
     queryset = Categoria.objects.all()
     model = Categoria
     serializer_class = CategoriaSerializer
 
 
+@extend_schema(tags=['artículos'])
 class ArticuloView(generics.ListCreateAPIView):
     queryset = Articulo.objects.all()
     model = Articulo
     serializer_class = ArticuloSerializer
 
 
+@extend_schema(tags=['artículos'])
 class ArticuloDetailAndCreateView(generics.RetrieveUpdateDestroyAPIView):
     queryset = Articulo.objects.all()
     model = Articulo
