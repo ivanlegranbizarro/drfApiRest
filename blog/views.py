@@ -1,6 +1,6 @@
 from django.views import generic
-from rest_framework import generics
 from drf_spectacular.utils import extend_schema
+from rest_framework import generics
 
 from .models import Articulo, Categoria
 from .serializers import ArticuloSerializer, CategoriaSerializer
