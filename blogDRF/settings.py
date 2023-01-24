@@ -143,5 +143,8 @@ SPECTACULAR_SETTINGS = {
     'TITLE': 'Django Masterclass IT-Academy',
     'DESCRIPTION': 'Una clase para atarlos a todos y reunirlos en las tinieblas',
     'VERSION': '1.0.0',
-    'SERVE_INCLUDE_SCHEMA': False
+    'SERVE_INCLUDE_SCHEMA': False,
+    "SWAGGER_UI_SETTINGS": {
+        "operationsSorter": "method",
+    },
 }
