@@ -1,0 +1,15 @@
+GET http://127.0.0.1:8000/api/articulos
+Content-Type: application/json
+Accept: application/json
+###
+POST http://127.0.0.1:8000/api/articulos/
+Content-Type: application/json
+Accept: application/json
+
+{
+  "nombre": "Artículo de prueba",
+  "contenido": "Este contenido es de calidad",
+  "categoria": 1,
+  "autor": 1
+}
+###
